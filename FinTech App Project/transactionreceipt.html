@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="transaction-receipt">
+      <h1>Transaction Receipt</h1>
+      <p id="crypto-type-display"></p>
+      <p id="purchase-amount-display"></p>
+      <p id="wallet-address-display"></p>
+    </div>
+    <script>
+      const transactionInfo = JSON.parse(sessionStorage.getItem("transactionInfo"));
+      document.getElementById("crypto-type-display").innerHTML = "Crypto Type: " + transactionInfo.cryptoType;
+      document.getElementById("purchase-amount-display").innerHTML = "Purchase Amount: " + transactionInfo.purchaseAmount;
+      document.getElementById("wallet-address-display").innerHTML = "Wallet Address: " + transactionInfo.walletAddress;
+    </script>
+    <button>Close</button>
+  </body>
+</html>

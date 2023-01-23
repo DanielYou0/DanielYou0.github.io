@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transaction Receipt</title>
+    <link rel="stylesheet" type="text/css" href="receipt.css">
+</head>
+  <body>
+    <div id="receipt-container">
+      <h1>Transaction Receipt</h1>
+      <p>Your transaction has been successfully sent to the recipient</p>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td id="name"></td>
+        </tr>
+        <tr>
+          <th>Recipient's Name</th>
+          <td id="recipient-name"></td>
+        </tr>
+        <tr>
+          <th>Bank ID</th>
+          <td id="bank-id"></td>
+        </tr>
+        <tr>
+          <th>Amount</th>
+          <td id="amount"></td>
+        </tr>
+      </table>
+    </div>
+    <button id="quit-button">Quit</button>
+  </body>
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var name = urlParams.get("name");
+    var recipientName = urlParams.get("recipientName");
+    var bankId = urlParams.get("bankId");
+    var amount = urlParams.get("amount");
+
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("recipient-name").innerHTML = recipientName;
+    document.getElementById("bank-id").innerHTML = bankId;
+    document.getElementById("amount").innerHTML = amount;
+    var quitButton = document.getElementById("quit-button");
+    quitButton.addEventListener("click", function() {
+    window.location.href = "index.html";
+    });
+  </script>
+</html>

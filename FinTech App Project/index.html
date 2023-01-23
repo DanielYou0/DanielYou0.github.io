@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home" id="home-link">Home</a></li>
+          <li><a href="#login" id="login-link">Login</a></li>
+          <li><a href="#signup" id="signup-link">Sign Up</a></li>
+          <li><a href="#budget" id="budget-link">Track Your Budget</a></li>
+          <li><a href="#transaction-system" id="transaction-link">Transaction System</a></li>
+          <li><a href="#crypto" id="crypto-link">Cryptocurrency Management</a></li>
+          <li><a href="#reward" id="reward-link">Rewards</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container">
+          <h1>Welcome to SmartFiances</h1>
+          <p class="home-slogan">Empowering Your Financial Future</p>
+          <div class="CTA-container">
+          <a href="#login" class="CTA-button">Login</a>
+          <a href="#signup" class="CTA-button">Sign Up</a>
+          </div>
+        </div>
+        <h2>About SmartFiances</h2>
+        <p> SmartFiances is a comprehensive financial management platform designed for busy individuals 
+          and small business owners who want to take control of their finances. Our platform offers a
+           range of features to help you manage your budget, transactions, and cryptocurrency investments all in one place.
+        </p>
+        <h2>Target Market</h2>
+        <p>Our platform is best for busy individuals and small business owners who are looking for an easy 
+          and convenient way to manage their finances.
+        </p>
+        <h2>What SmartFiances Does</h2>
+        <ul>
+          <li>
+            <h3>Comprehensive budget tracking</h3>
+            <p>Our platform provides detailed budget tracking tools to help you stay on top of your income and expenses. 
+              You can easily track your income, set budget goals, and monitor your progress.</p>
+            </li>
+            <li>
+            <h3>Transaction management</h3>
+            <p>Our platform allows you to manage your transactions with ease, including sending and receiving money, and keeping track of your account balance.</p>
+            </li>
+            <li>
+            <h3>Cryptocurrency management</h3>
+            <p>Our platform provides tools to help you manage your cryptocurrency investments, including portfolio tracking, market data, and alerts.</p>
+            </li>
+            <li>
+            <h3>Secure and user-friendly</h3>
+            <p>Our platform is built in an user-friendly interface, so you can feel confident that your information is easy to navigate. Currently, SmartFiances dosen't have a relable program to secure your information but with plans to expand, we will fortify our security</p>
+            </li>
+            </ul>
+            <h2>Inspiration Behind  SmartFiances</h2>
+            <p> SmartFiances was created because it saw a need for a comprehensive and easy-to-use financial management platform that could help busy individuals and small business owners take control of their finances.</p>
+            <h2>What Makes SmartFiances Unique</h2>
+            <p> SmartFiances is unique because it is one of the few financial management platforms that offers a full range of features, including budget tracking, transaction management, and cryptocurrency management, all in one place. Our platform is also designed with busy individuals and small business owners in mind, making it easy to use and navigate.</p>
+            <h2> SmartFiances Fintech Category</h2>
+            <p> SmartFiances belongs to multiple categories of fintech, including budget tracking, transaction management, and cryptocurrency management. However, SmartFiances plans to diversify their catagories and features in the future.</p>
+            <h2>How SmartFiances Makes Money</h2>
+            <p> SmartFiances makes money through a subscription-based business model. Users can choose from different pricing plans that offer different features and levels of access to the platform. We will also have advertisments from big companies to support our finances in the company</p>
+            <h2>How to Use  SmartFiances</h2>
+            <p>You can start using SmartFiances by visiting our website and signing up for an account. Once you've created an account, you can log in and start using all of the features that our platform offers.</p>
+<p>We also offer referral program where our current users can invite their friends and family to use SmartFiances and both the current user and the new user will get certain rewards for their participation.</p>
+<p>To ensure that our users are satisfied with our app, we offer a survey that they can take to give any feedback on specific improvements and issues.</p>
+      </section>
+      <section id="about">
+        <h1>About Us</h1>
+        <p>(why pick (fintech app name) and comparisons)</p>
+      </section>
+      <section id="transaction-system">
+        <div class="container">
+          <h1>Transaction System</h1>
+          <form id="transactions-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" pattern="^[a-zA-Z\s]*$" required>
+            <label for="recipient-name">Recipient's Name:</label>
+            <input type="text" id="recipient-name" name="recipient-name">
+            <label for="bank-id">Bank ID Number:</label>
+            <input type="text" id="bank-id" name="bank-id">
+            <label for="amount">Enter amount:</label>
+            <input type="number" id="amount" name="amount">
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+      </section>      
+      <section id="login">
+        <div class="container">
+          <h1>Login</h1>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section id="signup">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" pattern="^[a-zA-Z\s]*$" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section id="budget">
+        <div class="container">
+          <h1>Track Your Budget</h1>
+          <form id="budget-form">
+            <label for="income">Gross Monthly Income:</label>
+            <input type="number" id="income" name="income" required>
+            <label for="expenses">Gross Expenses:</label>
+            <input type="number" id="expenses" name="expenses" required>
+            <label for="savings">Savings:</label>
+            <input type="number" id="savings" name="savings" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="advice-modal">
+        <div id="advice-container"></div>
+        <div class="advice-container">
+          <p class="advice-text"></p>
+          <button id="close-button" class="btn btn-secondary" style="display:none">Close</button>
+      </div>
+      </section>
+      <section id="crypto" style="display:none">
+        <h1>Purchase</h1>
+        <form id="crypto-form">
+          <label for="cryptoType">Crypto Type:</label>
+          <input type="text" id="cryptoType" name="cryptoType">
+          <label for="purchaseAmount">Purchase Amount:</label>
+          <input type="text" id="purchaseAmount" name="purchaseAmount">
+          <label for="walletAddress">Wallet Address:</label>
+          <input type="text" id="walletAddress" name="walletAddress">
+          <input type="submit" value="Buy">
+        </form>
+      </section>
+    </main>
+  <script src="script.js"></script>
+</body> 
+</html> 
+ 
